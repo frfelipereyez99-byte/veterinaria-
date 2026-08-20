@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOLEDO Veterinaria | Cuidado Clínico de Alto Nivel</title>
+
+  <!-- Tipografía Montserrat y Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header con Píldoras Navegables -->
+<!-- Header con Píldoras Navegables -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#inicio" class="logo">
+      <img src="img/logo.png" alt="TOLEDO Veterinaria">
+    </a>
+
+    <!-- Grupo de Categorías Centrales -->
+    <nav class="nav-pill-wrapper">
+      <!-- Botón directo a Servicios (sin desplegable) -->
+      <a href="#servicios" class="pill-btn-single">Servicios</a>
+
+      <!-- Desplegable La Clínica -->
+      <div class="nav-dropdown">
+        <button class="pill-btn">La Clínica ▾</button>
+        <div class="dropdown-content">
+          <a href="#instalaciones">Instalaciones</a>
+          <a href="#equipo">Equipo Médico</a>
+        </div>
+      </div>
+
+      <!-- Botón directo a FAQ -->
+      <a href="#faq" class="pill-btn-single">FAQ</a>
+    </nav>
+
+    <a href="https://wa.me/573222036012?text=Hola,%20quiero%20agendar%20una%20cita" class="btn-hero-green" target="_blank">
+      Agendar Cita
+    </a>
+
+    <button class="menu-toggle" id="menuToggleBtn">☰</button>
+  </div>
+</header>
+
+<!-- Menú Móvil -->
+<div id="mobileMenu" class="mobile-menu">
+  <button class="close-btn" id="closeMenuBtn">✕</button>
+  <a href="#inicio" class="mobile-nav-link">Inicio</a>
+  <a href="#servicios" class="mobile-nav-link">Servicios</a>
+  <a href="#instalaciones" class="mobile-nav-link">Instalaciones</a>
+  <a href="#equipo" class="mobile-nav-link">Equipo</a>
+  <a href="#faq" class="mobile-nav-link">FAQ</a>
+  <a href="#contacto" class="mobile-nav-link">Contacto</a>
+</div>
+
+<!-- HERO CON SLIDER AUTOMÁTICO DE FONDOS -->
+<section id="inicio" class="hero">
+  <div class="hero-slider">
+    <div class="slide slide-1" style="background-image: url('img/perros parque.jpg');"></div>
+    <div class="slide slide-2" style="background-image: url('img/perrosss.jpg');"></div>
+    <div class="slide slide-3" style="background-image: url('img/golden.jpg');"></div>
+  </div>
+
+  <div class="hero-floating-badge">
+    <span>CLÍNICA VETERINARIA</span>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="hero-tag">ATENCIÓN CLÍNICA ESPECIALIZADA</span>
+    <h1>EL MEJOR CUIDADO<br><span class="highlight">PARA TU MASCOTA</span></h1>
+    <p>Tecnología médica avanzada, urgencias y estética integral en un solo lugar.</p>
+
+    <div class="hero-bottom-bar">
+      <a href="https://wa.me/573222036012?text=Hola,%20quiero%20agendar%20una%20cita" class="btn-green-action" target="_blank">
+        Reservar por WhatsApp
+      </a>
+      <div class="hero-meta">
+        <span>📍 Calle 24 sur #14-82</span>
+        <span>⏱️ Lun-Sáb: 10AM - 7PM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="main-group-section">
+  <div class="container">
+    <div class="section-title-wrapper">
+      <span class="sub-heading">SERVICIOS DE PRIMER NIVEL</span>
+      <h2>TODO LO QUE TU MASCOTA NECESITA</h2>
+    </div>
+
+    <div class="redbull-grid">
+      <div class="rb-card rb-card-large">
+        <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=1200&q=80" alt="Consulta Veterinaria">
+        <div class="rb-card-content">
+          <span class="rb-category">MÉDICA</span>
+          <h3>Consulta Especializada & Urgencias</h3>
+          <p>Diagnóstico certero, monitoreo continuo y atención rápida en momentos críticos.</p>
+          <a href="https://wa.me/573222036012?text=Consulta" class="rb-link" target="_blank">Agendar Cita →</a>
+        </div>
+      </div>
+
+      <div class="rb-card">
+        <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Cirugía">
+        <div class="rb-card-content">
+          <span class="rb-category">QUIRÓFANO</span>
+          <h3>Cirugías de Alta Complejidad</h3>
+          <p>Instalaciones esterilizadas y tecnología de monitoreo vital.</p>
+          <a href="https://wa.me/573222036012?text=Cirugia" class="rb-link" target="_blank">Consultar →</a>
+        </div>
+      </div>
+
+      <div class="rb-card">
+        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" alt="Grooming">
+        <div class="rb-card-content">
+          <span class="rb-category">ESTÉTICA</span>
+          <h3>Grooming & Spa Canino/Felino</h3>
+          <p>Higiene profunda, cortes de raza y cuidado de la piel.</p>
+          <a href="https://wa.me/573222036012?text=Grooming" class="rb-link" target="_blank">Reservar Cupo →</a>
+        </div>
+      </div>
+
+      <div class="rb-card">
+        <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=800&q=80" alt="Diagnóstico">
+        <div class="rb-card-content">
+          <span class="rb-category">DIAGNÓSTICO</span>
+          <h3>Imágenes & Laboratorio</h3>
+          <p>Ecografías y análisis inmediatos para decisiones médicas certeras.</p>
+          <a href="https://wa.me/573222036012?text=Diagnostico" class="rb-link" target="_blank">Ver Detalles →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN INSTALACIONES -->
+<section id="instalaciones" class="main-group-section dark-bg">
+  <div class="container">
+    <div class="section-title-wrapper text-center">
+      <span class="sub-heading">INFRAESTRUCTURA MÉDICA</span>
+      <h2>CONOCE NUESTRAS INSTALACIONES</h2>
+      <p class="section-desc">Espacios diseñados con la mejor tecnología para garantizar la comodidad y seguridad de cada paciente.</p>
+    </div>
+
+    <div class="facilities-grid">
+      <!-- Consultorio -->
+      <div class="facility-card">
+        <div class="facility-img-wrapper">
+          <img src="img/consultorio.jpg" alt="Consultorio Veterinaria Toledo">
+        </div>
+        <div class="facility-info">
+          <h3>Consultorio</h3>
+          <p>Espacio equipado para evaluaciones clínicas precisas y atención médica personalizada sin estrés.</p>
+        </div>
+      </div>
+
+      <!-- Hospital -->
+      <div class="facility-card">
+        <div class="facility-img-wrapper">
+          <img src="img/hospital.jpg" alt="Área de Hospitalización Toledo">
+        </div>
+        <div class="facility-info">
+          <h3>Hospitalización</h3>
+          <p>Área monitoreada para la recuperación de pacientes postquirúrgicos y cuidados intensivos.</p>
+        </div>
+      </div>
+
+      <!-- Quirófano -->
+      <div class="facility-card">
+        <div class="facility-img-wrapper">
+          <img src="img/quirofano.jpg" alt="Quirófano Veterinaria Toledo">
+        </div>
+        <div class="facility-info">
+          <h3>Quirófano</h3>
+          <p>Instalaciones estériles dotadas con tecnología avanzada para procedimientos quirúrgicos seguros.</p>
+        </div>
+      </div>
+
+      <!-- Grooming -->
+      <div class="facility-card">
+        <div class="facility-img-wrapper">
+          <img src="img/grooming-zona.jpg" alt="Zona Grooming Veterinaria Toledo">
+        </div>
+        <div class="facility-info">
+          <h3>Zona Grooming & Spa</h3>
+          <p>Espacio especializado para higiene, corte de raza y tratamientos estéticos integrales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO MÉDICO -->
+<section id="equipo" class="main-group-section">
+  <div class="container">
+    <div class="section-title-wrapper">
+      <span class="sub-heading">NUESTRO TALENTO</span>
+      <h2>PROFESIONALES A CARGO</h2>
+    </div>
+
+    <div class="team-cards-wrapper">
+      <div class="team-rb-card">
+        <div class="team-img">
+          <img src="img/andres.jpg" alt="Andrés Alomia">
+        </div>
+        <div class="team-meta">
+          <h3>Andrés Alomia</h3>
+          <span>MÉDICO VETERINARIO</span>
+        </div>
+      </div>
+
+      <div class="team-rb-card">
+        <div class="team-img">
+          <img src="img/paola.jpg" alt="Paola Ramírez">
+        </div>
+        <div class="team-meta">
+          <h3>Paola Ramírez</h3>
+          <span>AUXILIAR VETERINARIA</span>
+        </div>
+      </div>
+
+      <div class="team-rb-card">
+        <div class="team-img">
+          <img src="img/zharick.jpg" alt="Zharick Ramírez">
+        </div>
+        <div class="team-meta">
+          <h3>Zharick Ramírez</h3>
+          <span>GROOMER PROFESIONAL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="main-group-section dark-bg">
+  <div class="container small-container">
+    <div class="section-title-wrapper text-center">
+      <span class="sub-heading">PREGUNTAS FRECUENTES</span>
+      <h2>RESOLVEMOS TUS DUDAS</h2>
+    </div>
+
+    <div class="faq-list">
+      <details>
+        <summary>¿Se requiere agendamiento previo?</summary>
+        <p>Sí, recomendamos agendar mediante nuestro canal de WhatsApp para asignarte un turno personalizado y evitar tiempo de espera.</p>
+      </details>
+      <details>
+        <summary>¿Atienden situaciones de urgencia?</summary>
+        <p>Atendemos urgencias clínicas en nuestro horario de atención. Te recomendamos escribirnos inmediatamente de camino al centro.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto" class="rb-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="img/logo.png" alt="TOLEDO Veterinaria" class="footer-logo">
+      <p>Centro Clínico Veterinario | Cuidado de alta precisión para perros y gatos.</p>
+    </div>
+
+    <div class="footer-info">
+      <h4>UBICACIÓN & HORARIOS</h4>
+      <p>📍 Calle 24 sur #14-82</p>
+      <p>🕒 Lunes a Sábado: 10:00 AM - 7:00 PM</p>
+      <p>📞 +57 322 203 6012</p>
+    </div>
+
+    <div class="footer-cta">
+      <h4>CONTACTO DIRECTO</h4>
+      <a href="https://wa.me/573222036012" target="_blank" class="btn-green-action">
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </div>
+  
+  <div class="footer-bottom-bar">
+    <p>&copy; 2026 TOLEDO Veterinaria. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
